@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <!--I'm using the same CSS file I used for my first project to copy and paste fragments of code that are relevant to the current project-->
+    <link rel = "stylesheet" href = "login.css">
+    <script src = "login.js"></script>
+    <title>login</title>
+</head>
+<body>
+    <!--A user can input values that will take them to the Castle Grayskull website once the proper credentials are inputed-->
+    <h1>Castle Grayskull Member Login</h1>
+    <form id="login" onsubmit="return false">
+        First Name: <input type = "text" id = "fname"/>
+        <br>
+        <br>
+        Last Name: <input type = "text" id = "lname"/>
+        <br>
+        <br>
+        Badge Number: <input type = "number" id = "badgeID"/>
+        <br>
+        <br>
+        Zip Code: <input type = "number" id = "zipcode"/>
+        <br>
+        <br>
+        <!--Class and level refers to the class of the users character in game and their level from 1-100-->
+        Class and Level: <input type = "text" id = "classlvl"/>
+        <br>
+        <br>
+        <!--Password is CGS all caps-->
+        Password: <input type = "password" id = "PW"/>
+        <input type = "submit" onclick = "checkCreds()">
+    </form>
+    <p id = "loginstatus" > Status of Login</p>
+</body>
+</html>
