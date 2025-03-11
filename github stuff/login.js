@@ -4,6 +4,7 @@ function checkCreds()
     var lastname = document.getElementById("lname").value;
     var fullname = firstname + " " + lastname;
     var badgenum = document.getElementById("badgeID").value;
+    //Zipcode variable added here
     var zipcode = document.getElementById("zipcode").value
     var passw = document.getElementById("PW").value;
     //I wanted to make this variable check for a combination of letters and numbers but for now I kept it simple
@@ -12,6 +13,11 @@ function checkCreds()
     if (fullname.length <= 1)
     {
         document.getElementById("loginstatus").innerHTML = "Name Cannot Be Blank!";
+    }
+    //Added the check for 20 characters here
+    else if (fullname.length > 20)
+    {
+        document.getElementById("loginstatus").innerHTML = "Name is WAY too long!"
     }
     //The badge number can now be between 3 and 6 digits
     else if ((badgenum<100) || (badgenum>999999))
