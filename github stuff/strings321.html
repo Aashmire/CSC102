@@ -3,16 +3,25 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content=""width=device-width, initial-scale="1.0">
+    <!--I'm using the same CSS code from my first assignment but making a new CSS file for every new assignment because not every assignment has all the same elements on the page-->
+    <link rel = "stylesheet" href = "strings321.css">
     <script src = "strings321.js"></script>
     <title>Strings321</title>
 </head>
 <body>
-    <h1> String Stuff</h1>
+    <!--Lets find out if it's a palindrome!-->
+    <h1>Are You A Palindrome?</h1>
     <form id = "stringInput" onsubmit = "return false">
+        <br>
+        <br>
         String 1: <input type="text" id = "firstString"/>
         <br><br>
         String 2: <input type="text" id = "secondString"/>
         <input type = "submit" onclick = "strings321();"/>
     </form>
-    <p id = "updates">updates here</p>
+    <!--I figured out that these fields can remain hidden until the inner html is updated by removing the label after "updates" which makes it look cleaner on the page-->
+    <p1 id = "updates"></p1>
+    <br>
+    <p2 id = "Play Again?"></p2>
+
 </body>

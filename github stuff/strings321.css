@@ -1,0 +1,33 @@
+body
+{
+    text-align: center;
+    background-image: url(Castlegrayskull.jpg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1
+{
+    text-decoration: underline;
+    text-align: center;
+    font-size: 80px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(15, 120, 15);
+}
+form
+{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+p1
+{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+p2
+{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
