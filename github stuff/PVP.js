@@ -1,53 +1,57 @@
 function PVP()
 {
-    // generates a random # between 1 and 3
-    var player1 = Math.ceil(Math.random()*3);
-    var player2 = Math.ceil(Math.random()*3);
+    // generates a random # between 1 and 4
+    var player1Img1 = Math.ceil(Math.random()*4);
+    var player1Img2 = Math.ceil(Math.random()*4);
 
     // these are the images I've chosen for the game. They represent certain character classes
-    var tankimage = "Tank.png";
+    var tankimage = "Knight.png";
     var mageimage = "Mage.png";
     var rogueimage = "Rogue.png";
+    var priestimage = "Priest.jpg";
 
-    // player 1 conditions
-    if (player1 == 1)
+    // player 1 image 1
+    if (player1Img1 == 1)
     {
-        document.getElementById("player1Img").src = tankimage;
+        document.getElementById("player1Img1").src = tankimage;
     }
-    else if (player1 == 2)
+    else if (player1Img1 == 2)
     {
-        document.getElementById("player1Img").src = mageimage;    
+        document.getElementById("player1Img1").src = mageimage;    
     }
-    else 
+    else if (player1Img1 == 3)
     {
-        document.getElementById("player1Img").src = rogueimage;
+        document.getElementById("player1Img1").src = rogueimage;
     }
-
-    // player 2 conditions
-    if (player2 == 1)
+    else if (player1Img1 == 4)
     {
-        document.getElementById("player2Img").src = tankimage;
+        document.getElementById("player1Img1").src = priestimage;
     }
-    else if (player2 == 2)
+    // player 1 image 2
+    if (player1Img2 == 1)
     {
-        document.getElementById("player2Img").src = mageimage;    
+        document.getElementById("player1Img2").src = tankimage;
     }
-    else 
+    else if (player1Img2 == 2)
     {
-        document.getElementById("player2Img").src = rogueimage;
+        document.getElementById("player1Img2").src = mageimage;    
+    }
+    else if (player1Img2 == 3)
+    {
+        document.getElementById("player1Img2").src = rogueimage;
+    }
+    else if (player1Img2 == 4)
+    {
+        document.getElementById("player1Img2").src = priestimage;
     }
 
     // player results
-    if (player1 == player2)
+    if (player1Img1 == player1Img2)
     {
-        document.getElementById("FinalResult").innerHTML = "DRAW!";
+    document.getElementById("FinalResult").innerHTML = "You Win!";
     }
-    else if ((player1 == 1 && player2 == 3) || (player1 == 2 && player2 == 1) || (player1 == 3 && player2 == 2))
+    else if ((player1Img1==1 && player1Img2==4)||(player1Img1==2 && player1Img2==3)||(player1Img1==1 && player1Img2==2)||(player1Img1==3 && player1Img2==4)||(player1Img1==1 && player1Img2==3)||(player1Img1==2 && player1Img2==4));
     {
-        document.getElementById("FinalResult").innerHTML = "Player 1 WINS!";
-    }
-    else
-    {
-        document.getElementById("FinalResult").innerHTML = "Player 2 WINS!";
+    document.getElementById("FinalResult").innerHTML = "You Lose!";
     }
 }
