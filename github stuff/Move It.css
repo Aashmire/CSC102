@@ -1,0 +1,11 @@
+body
+{
+    /* I chose a different background for this one. */
+    background-image: url(pong\ game.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}

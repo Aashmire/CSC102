@@ -50,7 +50,7 @@ function PVP()
     {
     document.getElementById("FinalResult").innerHTML = "You Win!";
     }
-    else if ((player1Img1==1 && player1Img2==4)||(player1Img1==2 && player1Img2==3)||(player1Img1==1 && player1Img2==2)||(player1Img1==3 && player1Img2==4)||(player1Img1==1 && player1Img2==3)||(player1Img1==2 && player1Img2==4));
+    else
     {
     document.getElementById("FinalResult").innerHTML = "You Lose!";
     }
