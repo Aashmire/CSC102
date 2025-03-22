@@ -3,17 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Sounds.css">
     <script src = "Sounds.js"></script>
-    <title>Sounds</title>
+    <title>Retro Soundboard</title>
 </head>
 <body>
-    <h1>Sounds</h1>
+    <!--I went with a retro game style this time.-->
+    <h1>It'sa Me! A Mario!</h1>
 
+    <!--Audio controls for mario song-->
     <audio controls>
-        <source src = "coin-257878.mp3"></source>
+        <source src = "mario song.mp3"></source>
     </audio>
-
-    <button id = "Click For Sound" onclick = "play();" >Play Coin</button>
-    <button id = "Click to Mute" onclick = "stop();" >Stop Coin</button>
+    <br><br>
+    <!--Buttons for mario sound effects-->
+    <button id = "Click For Coin" onclick = "play1();" >Play Coin</button>
+    <button id = "Click For No Coin" onclick = "stop1();" >Stop Coin</button>
+    <br><br>
+    <button id = "Click For Death" onclick = "play2();" >Play Dead</button>
+    <button id = "Click For No Death" onclick = "stop2();" >Stop Death</button>
 </body>
 </html>

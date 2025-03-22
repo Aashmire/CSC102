@@ -1,0 +1,15 @@
+/*Retro gaming background*/
+body
+{
+    background-image: url(mario\ wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+/*It'sa Me! A Mario!*/
+h1
+{
+    font-size: 80px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+}
