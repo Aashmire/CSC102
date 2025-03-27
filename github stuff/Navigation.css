@@ -1,0 +1,16 @@
+nav
+{
+    background-color: rgb(159, 200, 90);
+    width: 200px;
+    height: 200px;
+    border-color: black;
+    border-width: 20px;
+    border-style: double;
+}
+nav ul li a
+{
+    color: bisque;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: bold;
+}

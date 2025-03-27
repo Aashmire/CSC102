@@ -34,3 +34,19 @@ button
 {
     cursor: pointer;
 }
+nav
+{
+    background-color: rgb(165, 200, 90);
+    width: 200px;
+    height: 200px;
+    border-color: rgb(100, 5, 175);
+    border-width: 15px;
+    border-style: double;
+}
+nav ul li a
+{
+    color: rgb(155, 130, 100);
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
